@@ -23,7 +23,7 @@ include PayPal::SDK::Core::Logging
     :return_url => "http://localhost:3000/payment/execute",
     :cancel_url => "http://localhost:3000/" },
 
-  # ###Transaction
+  # ###PaypalTransaction
   # A transaction defines the contract of a
   # payment - what is the payment for and who
   # is fulfilling it.

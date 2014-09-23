@@ -1,6 +1,6 @@
-# # Get Details of a Sale Transaction Sample
-# This sample code demonstrates how you can retrieve 
-# details of completed Sale Transaction.
+# # Get Details of a Sale PaypalTransaction Sample
+# This sample code demonstrates how you can retrieve
+# details of completed Sale PaypalTransaction.
 # API used: /v1/payments/sale/{sale-id}
 require 'paypal-sdk-rest'
 include PayPal::SDK::REST

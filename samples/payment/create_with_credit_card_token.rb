@@ -29,7 +29,7 @@ include PayPal::SDK::Core::Logging
       :credit_card_token => {
         :credit_card_id => "CARD-47D02392S1941151TKIODGQI" }}]},
 
-  # ###Transaction
+  # ###PaypalTransaction
   # A transaction defines the contract of a
   # payment - what is the payment for and who
   # is fulfilling it

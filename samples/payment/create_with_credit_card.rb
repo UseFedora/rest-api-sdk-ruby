@@ -48,7 +48,7 @@ include PayPal::SDK::Core::Logging
           :state => "OH",
           :postal_code => "43210",
           :country_code => "US" }}}]},
-  # ###Transaction
+  # ###PaypalTransaction
   # A transaction defines the contract of a
   # payment - what is the payment for and who
   # is fulfilling it.

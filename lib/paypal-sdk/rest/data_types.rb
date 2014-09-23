@@ -53,7 +53,7 @@ module PayPal::SDK
           object_of :update_time, DateTime
           object_of :intent, String
           object_of :payer, Payer
-          array_of  :transactions, Transaction
+          array_of  :transactions, PaypalTransaction
           object_of :state, String
           object_of :redirect_urls, RedirectUrls
           array_of  :links, Links
@@ -227,7 +227,7 @@ module PayPal::SDK
         end
 
       end
-      class Transaction < Base
+      class PaypalTransaction < Base
 
         def self.load_members
           object_of :amount, Amount
@@ -235,7 +235,7 @@ module PayPal::SDK
           object_of :description, String
           object_of :item_list, ItemList
           array_of  :related_resources, RelatedResources
-          array_of  :transactions, Transaction
+          array_of  :transactions, PaypalTransaction
         end
 
       end
@@ -446,11 +446,11 @@ module PayPal::SDK
 
         def self.load_members
           object_of :payer_id, String
-          array_of  :transactions, Transactions
+          array_of  :transactions, PaypalTransactions
         end
 
       end
-      class Transactions < Base
+      class PaypalTransactions < Base
 
         def self.load_members
           object_of :amount, Amount
