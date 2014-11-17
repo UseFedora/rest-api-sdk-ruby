@@ -11,12 +11,14 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{The PayPal REST SDK provides Ruby APIs to create, process and manage payment.}
   gem.description   = %q{The PayPal REST SDK provides Ruby APIs to create, process and manage payment.}
   gem.homepage      = "https://developer.paypal.com"
+  
+  gem.license       = "PayPal SDK License"
 
   gem.files         = Dir["{bin,spec,lib}/**/*"] + ["Rakefile", "README.md", "Gemfile"]
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
 
-  gem.add_dependency('paypal-sdk-core', '~> 0.3.0')
+  gem.add_dependency('paypal-sdk-core', '~> 0.3.1')
   gem.add_dependency('uuidtools', '~> 2.1')
 end
